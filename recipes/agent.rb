@@ -28,6 +28,11 @@ logstash_config name do
   action [:create]
 end
 
+logstash_plugins 'contrib' do
+  instance name
+  action [:create]
+end
+
 logstash_pattern name do
   action [:create]
 end
